@@ -1,0 +1,171 @@
+.container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.bodyHome {
+  width: 100%;
+  display: grid;
+  margin: 0 auto;
+  grid-gap: 20px;
+}
+
+.jumbotron {
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  background-color: white;
+  justify-content: space-between;
+  background-size: cover;
+  background-image: url("/assets/images/nature-2.jpg");
+}
+
+.discover {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 1240px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.jumbotron h1 {
+  font-weight: bold;
+  color: white;
+  font-family: "Montserrat", sans-serif;
+}
+
+.jumbotron p {
+  font-weight: 300;
+  color: white;
+  font-family: "Montserrat", sans-serif;
+}
+
+.homeContent {
+  display: grid;
+  max-width: 1240px;
+  grid-template-columns: repeat(2, auto);
+  grid-gap: 20px;
+  margin: 0 auto;
+}
+
+.wrapperInfo {
+  width: 100%;
+}
+
+.wrapperContent {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.titleHome {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 1em;
+  color: rgb(61, 61, 61);
+}
+
+.mapLogo {
+  width: 100%;
+  height: 460px;
+}
+
+.infoText {
+  color: rgb(95, 95, 95);
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+}
+
+.imgWrapper {
+  width: 100%;
+  height: 100%;
+}
+
+.titleContent {
+  font-size: 24px;
+  color: #518581;
+  letter-spacing: 0.6px;
+  font-family: "Montserrat", sans-serif;
+}
+
+@media only screen and (max-width: 600px) {
+  .contentInfo {
+    max-width: auto;
+  }
+
+  .info {
+    max-width: 320px;
+    width: 100%;
+    display: grid;
+    grid-gap: 12px;
+    margin: 0 auto;
+  }
+
+  .mapLogo {
+    width: 100%;
+    height: 360px;
+  }
+
+  .jumbotron {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    background-color: white;
+    justify-content: space-between;
+  }
+
+  .discover {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: auto;
+    padding: 0 12px;
+  }
+
+  .body {
+    max-width: auto;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .jumbotron h1 {
+    font-weight: bold;
+    color: white;
+    font-size: 20px;
+  }
+
+  .jumbotron p {
+    font-weight: 200;
+    color: white;
+    font-size: 13px;
+    letter-spacing: 0.5;
+  }
+
+  .contentInfo {
+    max-width: auto;
+  }
+
+  .titleHome {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-size: 24px;
+    margin-top: 1em;
+    font-weight: 500;
+    margin-bottom: 1em;
+  }
+
+  .homeContent {
+    display: flex;
+    flex-direction: column;
+    padding: 0 10px;
+  }
+}

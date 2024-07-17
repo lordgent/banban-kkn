@@ -1,0 +1,47 @@
+.containerSideBar {
+    z-index: 2;
+    position: fixed;
+    right: 0;
+    display: none;
+    top: 70px;
+    left: 150px;
+    bottom: 0;
+    background-color: #518581;
+    animation-delay: 3s;
+}
+.bodySide{
+    width: 100%;
+    height: 100%;  
+}
+.navLinkSide {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+  
+  .navLinkSide a {
+    color: white;
+    font-size: 12px;
+    padding: 8px;
+    font-family: "Montserrat", sans-serif;
+    cursor: pointer;
+    text-decoration: none;
+  }
+    
+  .navLinkSide a:hover {
+    background-color: white;
+    color: #518581;
+  }
+
+  .toogle{
+    cursor: pointer;
+    display: none;
+  }
+
+  @media only screen and (max-width: 600px) {
+    .toogle{
+        cursor: pointer;
+        display: flex;
+      }
+
+  }
