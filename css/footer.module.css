@@ -9,7 +9,7 @@
 .footer-content {
     display: flex;
     justify-content: space-around;
-    align-items: flex-start;
+    align-items: center;
     flex-wrap: wrap;
     padding: 20px;
 }
@@ -75,3 +75,20 @@
     font-family: "Montserrat", sans-serif;
 
 }
+
+.map{
+    width: 500px;
+    height: 260px;
+    border: none;
+  }
+
+
+
+  @media only screen and (max-width: 600px) {
+    .map{
+        width: 300px;
+        height: 180px;
+        border: none;
+      }
+    
+ }
