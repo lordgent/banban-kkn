@@ -10,7 +10,7 @@ document.getElementById("toogle").addEventListener("click", function () {
   document.addEventListener('DOMContentLoaded', function () {
     const whatsappButton = document.getElementById('my-whatsapp');
     whatsappButton.addEventListener('click', function () {
-        const phone = '628817083978';
+        const phone = '6281336235048';
         const message = 'Hi there!';
         const url = `https://wa.me/${phone}?text=${encodeURIComponent(message)}`;
         window.open(url, '_blank');
