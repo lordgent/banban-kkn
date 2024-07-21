@@ -4,7 +4,6 @@
 }
 .body{
     width: 1240px;
-    height: 100vh;
     margin: 5.6em auto;
     display: flex;
     flex-direction: column;
@@ -12,6 +11,7 @@
 }
 .imgGallery{
     width: 100%;
+    max-width: 500px;
     cursor: pointer;
 }
 .galeri-content{
