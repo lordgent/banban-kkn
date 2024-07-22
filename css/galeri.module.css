@@ -1,60 +1,59 @@
-.container{
+
+
+.titleGaleri{
+    color: rgb(95, 95, 95);
+    font-family: "Montserrat", sans-serif;
+    font-size: 28px;
+    text-align: center;
+    margin-bottom: 1em;
+  }
+  .container-image {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+  }
+  
+  .gallery-item {
+    flex: 0 0 calc(33.33% - 20px); 
+    margin: 10px;
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+
+  .gallery-item img {
     width: 100%;
     height: 100%;
-}
-.body{
-    width: 1240px;
-    margin: 5.6em auto;
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
-}
-.imgGallery{
-    width: 100%;
-    max-width: 500px;
-    cursor: pointer;
-}
-.galeri-content{
-    display: grid;
-    grid-template-columns: repeat(2,auto);
-    grid-gap: 12px;
-}
-.imgGalleryMain{
-    width: fit-content;
-    max-width: 600px;
-    height: 428px;
-}
-.content{
-    display: flex;
-    justify-content: space-between;
-    gap: 12px;
-}
-.title-gallery{
-    font-family: "Montserrat", sans-serif;
-    color: rgb(61, 61, 61);
-    font-size: 32px;
-    font-weight: bold;
-
-}
-
-@media only screen and (max-width: 600px) {
-    .galeri-content{
-        display:flex;
-        flex-direction: column;
+    display: block;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+  }
+  
+  /* Hover effect on image */
+  .gallery-item img:hover {
+    transform: scale(1.1);
+  }
+  
+  /* Media query for screens up to 600px wide */
+  @media (max-width: 600px) {
+    .gallery-item {
+      flex-basis: calc(50% - 20px); /* Two items per row */
     }
-    .imgGallery{
-        width: 300px;
-        margin: 0 auto;
+  
+    .gallery-item img {
+      width: 150px;
+      height: 300px; 
+      object-fit: cover;
     }
-    
-    .content{
-        display: flex;
-        flex-direction: column;
+  
+    .container-image {
+      margin: 10px; 
+      padding: 10px; 
+      justify-content: flex-start; 
     }
-    .imgGalleryMain{
-        width: fit-content;
-        max-width: 350px;
-        height: fit-content;
-    }
-
-}
+  }
+  

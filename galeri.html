@@ -3,17 +3,15 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Banban | Pamekasan</title>
+    <title>Ban Ban | Pamekasan</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
-
     <link rel="stylesheet" href="/css/navbar.module.css" />
     <link rel="stylesheet" href="/css/global.css" />
-    <link rel="stylesheet" href="/css/home.module.css" />
     <link rel="stylesheet" href="/css/sidebar.module.css" />
     <link rel="stylesheet" href="/css/footer.module.css" />
     <link rel="stylesheet" href="/css/galeri.module.css" />
@@ -48,13 +46,15 @@
     <div class="containerNavbar">
       <div class="bodyNav">
         <div class="logo">
-          <img
+          <a href="/home.html" style="text-decoration: none;">
+            <img
             src="/assets/icons/icon/pamekasan.png"
             alt="logo-desa"
             height="50"
           />
+          </a>
           <div>
-            <p>Desa Banban</p>
+            <p>Desa Ban Ban</p>
             <p>Kabupaten Pamekasan</p>
           </div>
         </div>
@@ -91,49 +91,38 @@
       </div>
     </div>
 
-    <!-- Body Content -->
     <div class="container">
       <div class="body">
+          <div style="margin-top: 6em;">
 
-        <h1 class="title-gallery">Galeri Desa BANBAN</h1>
-
-
-          <div class="content">
-
-            <div>
-              <div class="galeri-content">
-          
-                <div>
-                  <img src="/assets/images/tanaman1.jpeg" alt="" class="imgGallery">
-                </div>
-                <div>
-                  <img src="/assets/images/tanaman2.jpeg" alt="" class="imgGallery">
-                </div>
-                <div>
-                  <img src="/assets/images/nature-4.jpg" alt="" class="imgGallery">
-                </div>
-                <div>
-                  <img src="/assets/images/nature-5.jpg" alt="" class="imgGallery">
-                </div>
-                
-      
+            <h2 class="titleGaleri">Galeri Desa Banban</h2>
+            <div class="container-image">
+              <div class="gallery-item">
+                <img src="/assets/images/tanaman1.jpeg" alt="">
               </div>
-
+              <div class="gallery-item">
+                <img src="/assets/images/tanaman2.jpeg" alt="">
+    
+              </div>
+              <div class="gallery-item">
+                <img src="/assets/images/tanaman3.jpeg" alt="">
+    
+              </div>
+              <div class="gallery-item">
+                <img src="/assets/images/tanaman4.jpeg" alt="">
+    
+              </div>
+              <div class="gallery-item">
+                <img src="/assets/images/nature-5.jpg" alt="">
+              </div>
+              <div class="gallery-item">
+                <img src="/assets/images/nature-6.jpg" alt="">
+              </div>
+    
             </div>
-
-              <div class="display-image">
-                  <img src="/assets/images/nature-6.jpg" alt="" class="imgGalleryMain">
-              </div>
           </div>
-
-
-
-
-
-
       </div>
     </div>
-    <!-- Body Content -->
 
     <footer class="footer">
       <div class="footer-content">
@@ -158,11 +147,8 @@
         </div>
       </div>
 
-      <div class="footer-bottom">
-        &copy; 2024 KKN | Designed by KKN26-UTM
-      </div>
+      <div class="footer-bottom">&copy; 2024 KKN | Designed by KKN26-UTM</div>
     </footer>
-
     <!-- Content One Last -->
     <script src="https://cdn.jsdelivr.net/npm/floating-whatsapp@1.0.1/dist/floating-wpp.min.js"></script>
 
