@@ -1,0 +1,56 @@
+.contentService{
+    margin-top: 5em;
+    display: flex;
+    flex-direction: column;
+    gap: 8px
+}
+
+form {
+    border-radius: 8px;
+}
+label {
+    display: block;
+    margin-bottom: 8px;
+    color: rgb(73, 73, 73);
+    font-family: "Montserrat", sans-serif;
+    font-size: 14px;
+}
+input, textarea {
+    padding: 8px;
+    width: 100%;
+    margin-bottom: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    background:   #518581;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 4px;
+    width: 200px;
+    cursor: pointer;
+}
+.contact-form{
+    width: 100%;
+    max-width: 1240px;
+}
+
+@media only screen and (max-width: 600px) {
+    .contact-form{
+        max-width: auto;
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    input, textarea {
+        padding: 8px;
+        width: 350px;
+        margin-bottom: 12px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+    }
+ }

@@ -10,7 +10,7 @@
     margin-top: 5em;
     display: flex;
     flex-direction: column;
-    gap: 18px
+    gap: 8px
 }
 .titleDetail{
     font-family: "Montserrat", sans-serif;
@@ -24,7 +24,24 @@
     color: rgb(61, 61, 61);
     font-size: 14px;
 }
+.infoI{
+    font-family: "Montserrat", sans-serif;
+    color: rgb(61, 61, 61);
+    font-size: 14px;
+}
 
+
+ul.numbered li {
+    counter-increment: item;
+    margin-bottom: 8px; /* Opsional: menambahkan margin bawah untuk spasi antar elemen list */
+    position: relative;
+}
+
+ul.numbered li::before {
+    content: counter(item) ". ";
+    position: absolute;
+    left: -2em; /* Sesuaikan nilai ini dengan kebutuhan Anda */
+}
 @media only screen and (max-width: 600px) {
     .content-pkk{
         padding: 0 8px;

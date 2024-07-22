@@ -10,12 +10,16 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
-
     <link rel="stylesheet" href="/css/navbar.module.css" />
     <link rel="stylesheet" href="/css/global.css" />
-    <link rel="stylesheet" href="/css/home.module.css" />
     <link rel="stylesheet" href="/css/sidebar.module.css" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/floating-whatsapp@1.0.1/dist/floating-wpp.min.css">
+    <link rel="stylesheet" href="/css/footer.module.css" />
+    <link rel="stylesheet" href="/css/service.module.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/floating-whatsapp@1.0.1/dist/floating-wpp.min.css"
+    />
     <style>
       .floating-whatsapp {
         position: fixed;
@@ -30,11 +34,12 @@
         align-items: center;
         justify-content: center;
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    }
-    .floating-whatsapp img {
+      }
+      .floating-whatsapp img {
         width: 40px;
         height: 40px;
-    }
+      }
+
     </style>
   </head>
   <body>
@@ -74,8 +79,6 @@
           </div>
         </div>
 
-
-
         <!-- Sidebar last -->
 
         <div class="navLink">
@@ -87,6 +90,30 @@
       </div>
     </div>
 
+    <div class="container">
+      <div class="body">
+        <div class="contentService">
+          <form class="contact-form">
+            <div>
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" required>
+      
+            </div>
+            <div>
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" required>
+      
+            </div>
+            <div>
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="4" required></textarea>  
+            </div>
+            <button type="submit">Send Email</button>
+        </form>
+        </div>
+      
+      </div>
+    </div>
 
     <footer class="footer">
       <div class="footer-content">
@@ -111,16 +138,37 @@
         </div>
       </div>
 
-      <div class="footer-bottom">
-        &copy; 2024 KKN | Designed by KKN26-UTM
-      </div>
+      <div class="footer-bottom">&copy; 2024 KKN | Designed by KKN26-UTM</div>
     </footer>
-
-
-
     <!-- Content One Last -->
     <script src="https://cdn.jsdelivr.net/npm/floating-whatsapp@1.0.1/dist/floating-wpp.min.js"></script>
 
-   <script src="/js/general.js"></script>
+    <script src="/js/general.js"></script>
+
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script>
+        (function(){
+            emailjs.init("service_j9mgq9b"); 
+        })();
+
+        document.getElementById('contact-form').addEventListener('submit', function(event) {
+            event.preventDefault();
+
+            var templateParams = {
+                from_name: document.getElementById('name').value,
+                from_email: document.getElementById('email').value,
+                message: document.getElementById('message').value
+            };
+
+            emailjs.send('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', templateParams)
+                .then(function(response) {
+                    console.log('SUCCESS!', response.status, response.text);
+                    alert('Email sent successfully!');
+                }, function(error) {
+                    console.log('FAILED...', error);
+                    alert('Failed to send email. Please try again later.');
+                });
+        });
+    </script>
   </body>
 </html>
