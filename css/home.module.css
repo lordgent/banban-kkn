@@ -100,7 +100,7 @@
 .potensi-body{
   display: flex;
   flex-direction: column;
-  gap: 18px;
+  gap: 25px;
   max-width: 1240px;
   width: 100%;
   margin: 0 auto;
@@ -109,7 +109,7 @@
 .potensi-content{
   display: flex;
   flex-direction: column;
-  gap: 8px;
+  gap: 10px;
 }
 .content-potensi{
   display:flex;
@@ -131,7 +131,7 @@
   font-optical-sizing: auto;
   font-size: 30px;
   font-weight: bold;
-  margin-top: 1em;
+  margin-top: 0.2em;
   color: rgb(61, 61, 61);
 }
 
