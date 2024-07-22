@@ -3,15 +3,25 @@
     height: 100%;
 }
 .body{
-    width: 1240px;
+    width: 100%;
+    max-width: 1240px;
     margin: 5.6em auto;
     display: flex;
     flex-direction: column;
     gap: 12px;
 }
+
 .imgCard{
     max-width: 100%;
-
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    height: 300px;
+    width: 100%;
+}
+.wrapperContent{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
 }
 
 .card{
@@ -54,4 +64,23 @@
     display: grid;
     grid-template-columns: repeat(3, auto);
     grid-gap: 10px
+}
+
+
+@media only screen and (max-width: 600px) {
+
+    .body{
+        max-width: auto;
+        width: 100%;
+    }
+.content-activity{
+    padding: 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+.titleActivity{
+    padding: 4px 8px;
+}
+
 }

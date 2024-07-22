@@ -1,0 +1,34 @@
+.image-pkk{
+    max-width: 100%;
+    border-radius: 6px;
+    height: 300px;
+    width: 100%;
+   object-fit: cover;
+}
+
+.content-pkk{
+    margin-top: 5em;
+    display: flex;
+    flex-direction: column;
+    gap: 18px
+}
+.titleDetail{
+    font-family: "Montserrat", sans-serif;
+    color: rgb(61, 61, 61);
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.textDetail{
+    font-family: "Montserrat", sans-serif;
+    color: rgb(61, 61, 61);
+    font-size: 14px;
+}
+
+@media only screen and (max-width: 600px) {
+    .content-pkk{
+        padding: 0 8px;
+    }
+ 
+
+}
