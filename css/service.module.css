@@ -1,12 +1,16 @@
 .contentService{
-    margin-top: 5em;
     display: flex;
     flex-direction: column;
-    gap: 8px
+    gap: 8px;
+    max-width: 500px;
+    margin: 5em auto;
+    width: 100%;
 }
 
 form {
     border-radius: 8px;
+
+
 }
 label {
     display: block;
@@ -17,11 +21,12 @@ label {
 }
 input, textarea {
     padding: 8px;
-    width: 100%;
     margin-bottom: 12px;
     border: 1px solid #ccc;
     border-radius: 4px;
+    width: 100%;
 }
+
 
 button {
     background:   #518581;
