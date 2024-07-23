@@ -7,10 +7,12 @@
 }
 
 .content-pkk{
-    margin-top: 5em;
     display: flex;
     flex-direction: column;
-    gap: 8px
+    gap: 8px;
+    max-width: 800px;
+    margin: 5em auto;
+    width: 100%;
 }
 .titleDetail{
     font-family: "Montserrat", sans-serif;
@@ -35,17 +37,35 @@ ul.numbered li {
     counter-increment: item;
     margin-bottom: 8px; /* Opsional: menambahkan margin bawah untuk spasi antar elemen list */
     position: relative;
+    list-style: none;
+    left: 1.4em;
+    
 }
 
 ul.numbered li::before {
-    content: counter(item) ". ";
+    content: counter(item) ".";
     position: absolute;
-    left: -2em; /* Sesuaikan nilai ini dengan kebutuhan Anda */
+    left: -1.3em; /* Sesuaikan nilai ini dengan kebutuhan Anda */
 }
 @media only screen and (max-width: 600px) {
     .content-pkk{
+        max-width: 320px;
         padding: 0 8px;
     }
+
+    .image-pkk{
+        max-width: 100%;
+        border-radius: 6px;
+        height: 250px;
+        width: 100%;
+       object-fit: cover;
+    }
  
+    .titleDetail{
+        font-family: "Montserrat", sans-serif;
+        color: rgb(61, 61, 61);
+        font-size: 18px;
+        font-weight: bold;
+    }
 
 }
