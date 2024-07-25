@@ -11,7 +11,7 @@ document.getElementById("toogle").addEventListener("click", function () {
     const whatsappButton = document.getElementById('my-whatsapp');
     whatsappButton.addEventListener('click', function () {
         const phone = '6281336235048';
-        const message = 'Hi there!';
+        const message = 'saya ingin bertanya tentang desa banban!';
         const url = `https://wa.me/${phone}?text=${encodeURIComponent(message)}`;
         window.open(url, '_blank');
     });
